@@ -1,9 +1,9 @@
 #include "utils.h"
 
-unsigned long long labelOneLetter(Tree& tree, Labeling& labeling, Vertex root,
+unsigned long long labelOneLetter(const Tree& tree, Labeling& labeling, Vertex root,
                                   Vertex parent, char letter);
 
-unsigned long long labelOptimally(Tree& tree, Labeling& labeling) {
+unsigned long long labelOptimally(const Tree& tree, Labeling& labeling) {
     const char kNLetters = 26;
     const char kAlphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -16,7 +16,7 @@ unsigned long long labelOptimally(Tree& tree, Labeling& labeling) {
     return total_cost;
 }
 
-unsigned long long labelOneLetter(Tree& tree, Labeling& labeling, Vertex root,
+unsigned long long labelOneLetter(const Tree& tree, Labeling& labeling, Vertex root,
                                   Vertex parent, char letter) {
     
     if (isDefined(labeling.get(root, letter)))

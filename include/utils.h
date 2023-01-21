@@ -7,6 +7,6 @@
 #include "labeling.h"
 
 std::pair<Tree, Labeling> readInputFile(std::string filename);
-unsigned long long labelOptimally(Tree& tree, Labeling& labeling);
+unsigned long long labelOptimally(const Tree& tree, Labeling& labeling);
 
 #endif // OTL_INCLUDE_UTILS_H_
