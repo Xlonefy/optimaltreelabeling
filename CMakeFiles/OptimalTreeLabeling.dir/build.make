@@ -57,9 +57,22 @@ include CMakeFiles/OptimalTreeLabeling.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/OptimalTreeLabeling.dir/flags.make
 
+CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.o: CMakeFiles/OptimalTreeLabeling.dir/flags.make
+CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.o: src/label.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.o -c /mnt/c/Users/guilh/code/optimaltreelabeling/src/label.cpp
+
+CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/guilh/code/optimaltreelabeling/src/label.cpp > CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.i
+
+CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/guilh/code/optimaltreelabeling/src/label.cpp -o CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.s
+
 CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.o: CMakeFiles/OptimalTreeLabeling.dir/flags.make
 CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.o: src/label_optimally.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.o -c /mnt/c/Users/guilh/code/optimaltreelabeling/src/label_optimally.cpp
 
 CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.i: cmake_force
@@ -70,17 +83,64 @@ CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/guilh/code/optimaltreelabeling/src/label_optimally.cpp -o CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.s
 
+CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.o: CMakeFiles/OptimalTreeLabeling.dir/flags.make
+CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.o: src/labeling.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.o -c /mnt/c/Users/guilh/code/optimaltreelabeling/src/labeling.cpp
+
+CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/guilh/code/optimaltreelabeling/src/labeling.cpp > CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.i
+
+CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/guilh/code/optimaltreelabeling/src/labeling.cpp -o CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.s
+
+CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.o: CMakeFiles/OptimalTreeLabeling.dir/flags.make
+CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.o: src/tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.o -c /mnt/c/Users/guilh/code/optimaltreelabeling/src/tree.cpp
+
+CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/guilh/code/optimaltreelabeling/src/tree.cpp > CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.i
+
+CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/guilh/code/optimaltreelabeling/src/tree.cpp -o CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.s
+
+CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.o: CMakeFiles/OptimalTreeLabeling.dir/flags.make
+CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.o: src/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.o -c /mnt/c/Users/guilh/code/optimaltreelabeling/src/utils.cpp
+
+CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/guilh/code/optimaltreelabeling/src/utils.cpp > CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.i
+
+CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/guilh/code/optimaltreelabeling/src/utils.cpp -o CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.s
+
 # Object files for target OptimalTreeLabeling
 OptimalTreeLabeling_OBJECTS = \
-"CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.o"
+"CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.o" \
+"CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.o" \
+"CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.o" \
+"CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.o" \
+"CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.o"
 
 # External object files for target OptimalTreeLabeling
 OptimalTreeLabeling_EXTERNAL_OBJECTS =
 
+libOptimalTreeLabeling.so: CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.o
 libOptimalTreeLabeling.so: CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.o
+libOptimalTreeLabeling.so: CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.o
+libOptimalTreeLabeling.so: CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.o
+libOptimalTreeLabeling.so: CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.o
 libOptimalTreeLabeling.so: CMakeFiles/OptimalTreeLabeling.dir/build.make
 libOptimalTreeLabeling.so: CMakeFiles/OptimalTreeLabeling.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libOptimalTreeLabeling.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libOptimalTreeLabeling.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OptimalTreeLabeling.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

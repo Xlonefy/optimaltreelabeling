@@ -6,6 +6,7 @@
 #include <list>
 
 #include "vertex.h"
+#include "labeling.h"
 
 class Tree {
 public:
@@ -16,6 +17,7 @@ public:
     void addEdge(Vertex v1, Vertex v2);
 
     Vertex findARoot(const Labeling& labeling) const;
+
 private:
     std::vector<std::list<Vertex>> neighbours_;
 };

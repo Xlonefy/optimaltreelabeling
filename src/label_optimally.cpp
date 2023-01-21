@@ -42,9 +42,3 @@ unsigned long long labelOneLetter(Tree& tree, Labeling& labeling, Vertex root,
     
     return cost + std::min(num_has_letter, num_no_letter);
 }
-
-// Vertex findARoot(const Tree& tree, const Labeling& labeling) {
-//     Vertex v = 0;
-//     while (labeling.get(v, 'a') == Label::kEmpty) v++;
-//     return v;
-// }

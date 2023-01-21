@@ -163,6 +163,33 @@ main.cc.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cc.s
 .PHONY : main.cc.s
 
+src/label.o: src/label.cpp.o
+
+.PHONY : src/label.o
+
+# target to build an object file
+src/label.cpp.o:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.o
+.PHONY : src/label.cpp.o
+
+src/label.i: src/label.cpp.i
+
+.PHONY : src/label.i
+
+# target to preprocess a source file
+src/label.cpp.i:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.i
+.PHONY : src/label.cpp.i
+
+src/label.s: src/label.cpp.s
+
+.PHONY : src/label.s
+
+# target to generate assembly for a file
+src/label.cpp.s:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.s
+.PHONY : src/label.cpp.s
+
 src/label_optimally.o: src/label_optimally.cpp.o
 
 .PHONY : src/label_optimally.o
@@ -190,6 +217,87 @@ src/label_optimally.cpp.s:
 	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/label_optimally.cpp.s
 .PHONY : src/label_optimally.cpp.s
 
+src/labeling.o: src/labeling.cpp.o
+
+.PHONY : src/labeling.o
+
+# target to build an object file
+src/labeling.cpp.o:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.o
+.PHONY : src/labeling.cpp.o
+
+src/labeling.i: src/labeling.cpp.i
+
+.PHONY : src/labeling.i
+
+# target to preprocess a source file
+src/labeling.cpp.i:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.i
+.PHONY : src/labeling.cpp.i
+
+src/labeling.s: src/labeling.cpp.s
+
+.PHONY : src/labeling.s
+
+# target to generate assembly for a file
+src/labeling.cpp.s:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/labeling.cpp.s
+.PHONY : src/labeling.cpp.s
+
+src/tree.o: src/tree.cpp.o
+
+.PHONY : src/tree.o
+
+# target to build an object file
+src/tree.cpp.o:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.o
+.PHONY : src/tree.cpp.o
+
+src/tree.i: src/tree.cpp.i
+
+.PHONY : src/tree.i
+
+# target to preprocess a source file
+src/tree.cpp.i:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.i
+.PHONY : src/tree.cpp.i
+
+src/tree.s: src/tree.cpp.s
+
+.PHONY : src/tree.s
+
+# target to generate assembly for a file
+src/tree.cpp.s:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/tree.cpp.s
+.PHONY : src/tree.cpp.s
+
+src/utils.o: src/utils.cpp.o
+
+.PHONY : src/utils.o
+
+# target to build an object file
+src/utils.cpp.o:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.o
+.PHONY : src/utils.cpp.o
+
+src/utils.i: src/utils.cpp.i
+
+.PHONY : src/utils.i
+
+# target to preprocess a source file
+src/utils.cpp.i:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.i
+.PHONY : src/utils.cpp.i
+
+src/utils.s: src/utils.cpp.s
+
+.PHONY : src/utils.s
+
+# target to generate assembly for a file
+src/utils.cpp.s:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/utils.cpp.s
+.PHONY : src/utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -203,9 +311,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/label.o"
+	@echo "... src/label.i"
+	@echo "... src/label.s"
 	@echo "... src/label_optimally.o"
 	@echo "... src/label_optimally.i"
 	@echo "... src/label_optimally.s"
+	@echo "... src/labeling.o"
+	@echo "... src/labeling.i"
+	@echo "... src/labeling.s"
+	@echo "... src/tree.o"
+	@echo "... src/tree.i"
+	@echo "... src/tree.s"
+	@echo "... src/utils.o"
+	@echo "... src/utils.i"
+	@echo "... src/utils.s"
 .PHONY : help
 
 
