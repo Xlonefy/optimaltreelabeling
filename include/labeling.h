@@ -52,7 +52,9 @@ public:
     void print();
 
 private:
-    std::vector<std::map<Vertex, Label>> labels_;
+    // OLD
+    // std::vector<std::map<Vertex, Label>> labels_;
+    std::map<Vertex, std::vector<Label>> labels_;
 };
 
 #endif // OTL_INCLUDE_LABELING_H_
