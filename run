@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 echo "Compiling...";
-cmake .;
 make -j 4;
 
 echo "Running tests...";
@@ -11,3 +10,5 @@ do
     time ./main $FILE;
     echo "";
 done
+
+make clean;
