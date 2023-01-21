@@ -12,7 +12,6 @@ add_definitions(-Wall -Wextra -Wpedantic -std=c++17 -O4 -march=native)
 include_directories(include)
 file(GLOB SOURCES "src/*.cpp")
 add_library(OptimalTreeLabeling SHARED ${SOURCES})
-target_link_libraries(OptimalTreeLabeling Eigen3::Eigen)
 
 add_executable(main main.cc)
 target_link_libraries(main OptimalTreeLabeling)

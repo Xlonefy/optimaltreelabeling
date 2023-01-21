@@ -1,0 +1,4 @@
+/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles/edit_cache.dir
+/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles/main.dir
+/mnt/c/Users/guilh/code/optimaltreelabeling/CMakeFiles/OptimalTreeLabeling.dir
