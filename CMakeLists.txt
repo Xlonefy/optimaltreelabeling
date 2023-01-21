@@ -7,7 +7,7 @@ if (OPENMP_FOUND)
     set (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
 endif()
 
-add_definitions(-Wall -Wextra -Wpedantic -std=c++20 -O4 -march=native)
+add_definitions(-Wall -Wextra -Wpedantic -std=c++17 -O2 -march=native)
 
 include_directories(include)
 file(GLOB SOURCES "src/*.cpp")

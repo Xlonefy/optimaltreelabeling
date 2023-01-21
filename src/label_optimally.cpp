@@ -1,3 +1,4 @@
+#include <iostream>
 #include "utils.h"
 
 unsigned long long labelOneLetter(const Tree& tree, Labeling& labeling, Vertex root,

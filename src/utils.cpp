@@ -8,45 +8,29 @@
 
 std::pair<Tree, Labeling> readInputFile(std::string filename){
     std::ifstream file(filename);
-    std::string line, label;
-    int delimiter;
-    int N, L;
-    Vertex v, v1, v2;
-    std::unordered_set<Vertex> vertexes;
 
     if(!file.is_open())
         throw std::invalid_argument("File not found.");
     
     // getting N and L from the first line
-    std::getline(file, line);
-    delimiter = line.find(" ");
-    N = stoi(line.substr(0, delimiter));
-    L = stoi(line.substr(delimiter + 1, line.length() - 1));
-
+    int N, L;
+    file >> N >> L;
 
     Tree tree(N);
+    Vertex v1, v2;
     for(auto i = 0; i < N - 1; i++){
-        std::getline(file, line);
-        delimiter = line.find(" ");
-        v1 = stoi(line.substr(0, delimiter));
-        v2 = stoi(line.substr(delimiter + 1, line.length() - 1));
-        tree.addEdge(v1, v2);
-        vertexes.insert(v1);
-        vertexes.insert(v2);
+        file >> v1 >> v2;
+        tree.addEdge(v1 - 1, v2 - 1);
     }
 
+    Vertex v;
     Labeling labeling;
+    std::string label;
     for(auto i = 0; i < L; i++){
-        std::getline(file, line);
-        delimiter = line.find(" ");
-        v = stoi(line.substr(0, delimiter));
-        label = line.substr(delimiter + 1, line.length() - 1);
-
-        vertexes.erase(v);
-        if(label == "$") labeling.labelVertex(v, "");
-        else labeling.labelVertex(v, label);
+        file >> v >> label;
+        if(label == "$") labeling.labelVertex(v - 1, "");
+        else labeling.labelVertex(v - 1, label);
     }
 
-    std::pair<Tree, Labeling> p (tree, labeling);
-    return p;
+    return {tree, labeling};
 }

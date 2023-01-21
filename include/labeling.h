@@ -10,9 +10,9 @@ class Labeling {
 public:
     Labeling();
     Label &get(const Vertex &v, char letter);
-    const Label& get(const Vertex &v, char letter) const;
+    // const Label& get(const Vertex &v, char letter) const;
     void labelVertex(const Vertex& v, std::string label);
-    void labelVertex(const Vertex& v);
+    void print();
 private:
     std::vector<std::unordered_map<Vertex, Label>> labels_;
 };

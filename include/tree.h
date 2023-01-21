@@ -16,7 +16,9 @@ public:
 
     void addEdge(Vertex v1, Vertex v2);
 
-    Vertex findARoot(const Labeling& labeling) const;
+    Vertex findARoot(Labeling& labeling) const;
+
+    void print();
 
 private:
     std::vector<std::list<Vertex>> neighbours_;

@@ -1,4 +1,5 @@
 #include <unordered_map>
+#include <iostream>
 #include "labeling.h"
 
 
@@ -15,16 +16,17 @@ void Labeling::labelVertex(const Vertex& v, std::string label){
         labels_[label[i] - 'A'][v] = Label::kHasLetter;
 }
 
-void Labeling::labelVertex(const Vertex& v){
-    const char kNLetters = 26;
-    for(auto i = 0; i < kNLetters; i++)
-        labels_[i][v] = Label::kEmpty;
-}
-
-const Label& Labeling::get(const Vertex &v, char letter) const {
+Label& Labeling::get(const Vertex &v, char letter){
+    if (!labels_[letter - 'A'].count(v)) 
+        labels_[letter - 'A'][v] = Label::kEmpty;
     return labels_[letter - 'A'][v];
 }
 
-Label& Labeling::get(const Vertex &v, char letter){
-    return Labeling::get(v, letter);
+void Labeling::print(){
+    for(size_t i = 0; i < labels_.size(); i++){
+        std::cout << static_cast<char>('A' + i) << std::endl;
+        for(const auto& [key, value] : labels_[i]){
+            std::cout << "\t" << key + 1 << ": " << value << std::endl;
+        }
+    }
 }
