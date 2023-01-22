@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
     auto [tree, labeling] = readInputFile(filename);
 
     // calculates the optimal labeling
-    auto optimal_cost = labelOptimally(tree, labeling);
+    auto optimal_cost = labelOptimallyMultiThread(tree, labeling);
 
     // printing the output to the standard output
     std::cout << "Optimal cost (" << filename << "): " << optimal_cost << std::endl;

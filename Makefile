@@ -190,6 +190,33 @@ src/label.cpp.s:
 	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/label.cpp.s
 .PHONY : src/label.cpp.s
 
+src/label_multithread.o: src/label_multithread.cpp.o
+
+.PHONY : src/label_multithread.o
+
+# target to build an object file
+src/label_multithread.cpp.o:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/label_multithread.cpp.o
+.PHONY : src/label_multithread.cpp.o
+
+src/label_multithread.i: src/label_multithread.cpp.i
+
+.PHONY : src/label_multithread.i
+
+# target to preprocess a source file
+src/label_multithread.cpp.i:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/label_multithread.cpp.i
+.PHONY : src/label_multithread.cpp.i
+
+src/label_multithread.s: src/label_multithread.cpp.s
+
+.PHONY : src/label_multithread.s
+
+# target to generate assembly for a file
+src/label_multithread.cpp.s:
+	$(MAKE) -f CMakeFiles/OptimalTreeLabeling.dir/build.make CMakeFiles/OptimalTreeLabeling.dir/src/label_multithread.cpp.s
+.PHONY : src/label_multithread.cpp.s
+
 src/label_optimally.o: src/label_optimally.cpp.o
 
 .PHONY : src/label_optimally.o
@@ -314,6 +341,9 @@ help:
 	@echo "... src/label.o"
 	@echo "... src/label.i"
 	@echo "... src/label.s"
+	@echo "... src/label_multithread.o"
+	@echo "... src/label_multithread.i"
+	@echo "... src/label_multithread.s"
 	@echo "... src/label_optimally.o"
 	@echo "... src/label_optimally.i"
 	@echo "... src/label_optimally.s"

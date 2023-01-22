@@ -2,9 +2,6 @@
 #include "utils.h"
 #include "constants.h"
 
-unsigned long long labelOneLetter(const Tree& tree, Labeling& labeling, Vertex root,
-                                  Vertex parent, char letter);
-
 unsigned long long labelOptimally(const Tree& tree, Labeling& labeling) {
     // Entrypoint for the algorithm.
 

@@ -33,4 +33,23 @@ std::pair<Tree, Labeling> readInputFile(std::string filename);
 */
 unsigned long long labelOptimally(const Tree& tree, Labeling& labeling);
 
+/**
+ * Label the given tree with optimal labels using multiple threads
+ * 
+ * @param tree: the considered unrooted tree.
+ * @param labeling: the given label for that tree. 
+ *      Will be modified by the function.
+ * 
+ * We assume that the tree is well constructed (connected and with no cycles)
+ * and that the all the leafs (and only the leafs) are labeled in the input.
+ * 
+ * Time complexity of the algorithm is of O(n), where 
+ * n is the number of vertices on the tree.
+ * 
+*/
+unsigned long long labelOptimallyMultiThread(const Tree& tree, Labeling& labeling);
+
+unsigned long long labelOneLetter(const Tree& tree, Labeling& labeling, Vertex root,
+                                  Vertex parent, char letter);
+
 #endif // OTL_INCLUDE_UTILS_H_
