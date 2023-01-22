@@ -1,4 +1,4 @@
-# Optimal Tree Labeling
+# 🌳 Optimal Tree Labeling
 
 This is the one implementation of the Optimal Tree Labeling problem as proposed by Hang Zhou (zhouhang32@gmail.com). 
 
@@ -8,11 +8,11 @@ The solution to the problem runs in $O(n)$ time complexity and $O(n)$ space comp
 
 This procedure stores the Tree in an adjacency list and makes use of a recursive greedy algorithm to solve the challenge. It outputs the optimal cost of the Tree and it calculates at least one optimal labeling possibility. More information about this can be found in the report (link not available for now).
 
-## Running
+## 🚀 Running
 
 To run the input files (stored in the `input` folder): 
 ```bash
-bash ./run ;
+bash ./run;
 ```
 
 Or, if you want to run the script properly:
@@ -21,7 +21,7 @@ chmod +x ./run;
 ./run
 ```
 
-## Compiling
+## 🏗️ Compiling
 When running all the tests, the program will compile directly, but if you want to compile it by yourself: 
 ```bash
 make;
@@ -35,14 +35,14 @@ cmake ..;
 ```
 
 
-## Entrypoint
+## 💻 Entrypoint
 
 The main entrypoint for the project is the `main.cc` file.
 
 After compiling, you can execute the program with: 
 
 ```bash
-./main <FILENAME>
+./main <FILENAME>;
 ```
 
 Where FILENAME indicates the path to the desired input file.

@@ -5,10 +5,12 @@ make -j 4;
 echo "Running tests...";
 echo "";
 
-for FILE in input/*; 
-do 
-    time ./main $FILE;
-    echo "";
-done
+time (
+    for FILE in input/*; 
+    do 
+        time ./main $FILE;
+        echo "";
+    done
+)
 
 make clean;
