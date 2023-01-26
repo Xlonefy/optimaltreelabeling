@@ -1,30 +1,52 @@
+#include <algorithm>
 #include <iostream>
 #include "labeling.h"
 #include "constants.h"
 
 
-Labeling::Labeling(){
-    // labels_.resize(kNLetters);
+Labeling::Labeling(size_t n_vertices) : n_vertices_(n_vertices){
+    for (auto &letter_labels : labels_)
+        letter_labels = std::vector<Label>(n_vertices, Label::kEmpty);
 }
 
 void Labeling::labelVertex(const Vertex& v, std::string label){
-    labels_[v] = std::vector(kNLetters, Label::kNoLetter);
-    for(auto i = 0ul; i < label.length(); i++)
-        labels_[v][label[i] - 'A'] = Label::kHasLetter;
+    std::for_each(kAlphabet, kAlphabet + kNLetters, [&](char c) {
+        get(v, c) = Label::kNoLetter;
+    });
+
+    for (char c : label)
+        get(v, c) = Label::kHasLetter;
 }
 
 Label& Labeling::get(const Vertex &v, char letter){
-    if (!labels_.count(v))
-        labels_[v] = std::vector(kNLetters, Label::kEmpty);
-    return labels_[v][letter - 'A'];
+    return labels_[letter - 'A'][v];
 }
 
 void Labeling::print(){
-    for (const auto& [vertex, letters] : labels_){
-        std::cout << vertex << ": \n";
-        for(size_t i = 0; i < kNLetters; i++){
-            std::cout << "\t" << static_cast<char>('A' + i) 
-                << ": " << letters[i] << std::endl;
-        }
+    for (size_t i = 0; i < n_vertices_; i++) {
+        std::cout << "Vertex " << i << ": \"";
+
+        if (get(i, 'A') == Label::kEmpty)
+            std::cout << "e";
+
+        std::for_each(kAlphabet, kAlphabet + kNLetters, [&](char c) {
+            switch (labels_[c - 'A'][i]) {
+            case Label::kEmpty:
+                // std::cout << "[" << c << "]";
+                break;
+            case Label::kNoLetter:
+                break;
+            case Label::kHasLetter:
+                std::cout << c;
+                break;
+            case Label::kIndifferent:
+                std::cout << "(" << c << ")";
+                break;
+            default:
+                break;
+            }
+        });
+
+        std::cout << "\"\n";
     }
 }

@@ -30,7 +30,7 @@ std::pair<Tree, Labeling> readInputFile(std::string filename){
     }
 
     // initializes the Labeling
-    Labeling labeling;
+    Labeling labeling(N);
 
     // helper variables
     Vertex v;
