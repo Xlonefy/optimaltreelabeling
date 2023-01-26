@@ -7,5 +7,6 @@
 
 const char kNLetters = 26;
 const char kAlphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const size_t kNumThreads = 8;
 
 #endif // OTL_INCLUDE_CONSTANTS_H_
