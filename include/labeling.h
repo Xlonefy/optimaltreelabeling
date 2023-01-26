@@ -3,6 +3,7 @@
 
 #include <map>
 #include <vector>
+#include "constants.h"
 #include "label.h" 
 #include "vertex.h" 
 
@@ -20,7 +21,7 @@ public:
     /**
      * Construct an empty labelling.
     */
-    Labeling();
+    Labeling(size_t n_vertices);
 
     /**
      * Get the label for a vertex and a letter
@@ -52,9 +53,8 @@ public:
     void print();
 
 private:
-    // OLD
-    // std::vector<std::map<Vertex, Label>> labels_;
-    std::map<Vertex, std::vector<Label>> labels_;
+    std::array<std::vector<Label>, kNLetters> labels_;
+    size_t n_vertices_;
 };
 
 #endif // OTL_INCLUDE_LABELING_H_
