@@ -12,7 +12,7 @@ This procedure stores the Tree in an adjacency list and makes use of a recursive
 
 To run the input files (stored in the `input` folder): 
 ```bash
-bash ./run;
+bash ./run
 ```
 
 Or, if you want to run the script properly:
@@ -24,14 +24,14 @@ chmod +x ./run;
 ## 🏗️ Compiling
 When running all the tests, the program will compile directly, but if you want to compile it by yourself: 
 ```bash
-make;
+make
 ```
 
 To create your own makefile (that can be optimized for your system), run: 
 ```bash
-mkdir build;
-cd build;
-cmake ..;
+mkdir build
+cd build
+cmake ..
 ```
 
 
@@ -42,7 +42,7 @@ The main entrypoint for the project is the `main.cc` file.
 After compiling, you can execute the program with: 
 
 ```bash
-./main <FILENAME>;
+./main <FILENAME>
 ```
 
 Where FILENAME indicates the path to the desired input file.
