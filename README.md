@@ -17,7 +17,7 @@ bash ./run
 
 Or, if you want to run the script properly:
 ```bash
-chmod +x ./run;
+chmod +x ./run
 ./run
 ```
 
