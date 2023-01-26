@@ -16,16 +16,16 @@ void Tree::addEdge(Vertex v1, Vertex v2){
 }
 
 Vertex Tree::findARoot(Labeling& labeling) const{
-    Vertex max_label_vertex = 0;
-    size_t max_number_neighbours = 0;
-    for (auto i = 0ul; i < neighbours_.size(); i++){
-        if (labeling.get(i, 'A') != Label::kEmpty) continue;
-        if(neighbours_[max_label_vertex].size() > max_number_neighbours){
-            max_number_neighbours = neighbours_[max_label_vertex].size();
-            max_label_vertex = i;
-        }
-    }
-    return max_label_vertex;
+    // Vertex max_label_vertex = 0;
+    // size_t max_number_neighbours = 0;
+    // for (auto i = 0ul; i < neighbours_.size(); i++){
+    //     if (labeling.get(i, 'A') != Label::kEmpty) continue;
+    //     if(neighbours_[max_label_vertex].size() > max_number_neighbours){
+    //         max_number_neighbours = neighbours_[max_label_vertex].size();
+    //         max_label_vertex = i;
+    //     }
+    // }
+    // return max_label_vertex;
 }
 
 void Tree::print(){
