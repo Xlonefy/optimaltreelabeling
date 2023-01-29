@@ -7,7 +7,7 @@ if (OPENMP_FOUND)
     set (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
 endif()
 
-add_definitions(-Wall -Wextra -Wpedantic -std=c++17 -O2 -g -march=native)
+add_definitions(-Wall -Wextra -Wpedantic -std=c++17 -O3 -march=native -pthread)
 # add_definitions(-Wall -Wextra -Wpedantic -std=c++17 -Og -ggdb -pthread)
 
 include_directories(include)
