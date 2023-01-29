@@ -22,18 +22,13 @@ chmod +x ./run
 ```
 
 ## 🏗️ Compiling
-When running all the tests, the program will compile directly, but if you want to compile it by yourself: 
-```bash
-make
-```
-
-To create your own makefile (that can be optimized for your system), run: 
+To compile the program, run:
 ```bash
 mkdir build
 cd build
 cmake ..
+make
 ```
-
 
 ## 💻 Entrypoint
 
