@@ -1,6 +1,6 @@
 # 🌳 Optimal Tree Labeling
 
-This is the one implementation of the Optimal Tree Labeling problem as proposed by Hang Zhou (zhouhang32@gmail.com). 
+This is one implementation of the Optimal Tree Labeling problem as proposed by Hang Zhou (zhouhang32@gmail.com). 
 
 This project was executed by João Marques Andreotti (joao.marques-andreotti@polytechnique.edu) and Guilherme Vieira Manhaes (guilherme.vieira-manhaes@polytechnique.edu) in the scope of the INF421 - _Conception et analyse d'algorithms_ - 2022/2023.
 
