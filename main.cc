@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
     auto optimal_cost = labelOptimallyMultiThread(tree, labeling);
 
     // printing the output to the standard output
-    std::cout << "Optimal cost (" << filename << "): " << optimal_cost << std::endl;
+    std::cout << optimal_cost << std::endl;
 
     return 0;
 }
