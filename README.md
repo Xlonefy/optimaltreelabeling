@@ -24,9 +24,7 @@ chmod +x ./run
 ## 🏗️ Compiling
 To compile the program, run:
 ```bash
-mkdir build
-cd build
-cmake ..
+cmake .
 make
 ```
 
