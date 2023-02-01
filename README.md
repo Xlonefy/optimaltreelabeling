@@ -6,7 +6,7 @@ This project was executed by João Marques Andreotti (joao.marques-andreotti@pol
 
 The solution to the problem runs in $O(n)$ time complexity and $O(n)$ space complexity, where $n$ is the number of vertices of the tree. 
 
-This procedure stores the Tree in an adjacency list and makes use of a recursive greedy algorithm to solve the challenge. It outputs the optimal cost of the Tree and it calculates at least one optimal labeling possibility. More information about this can be found in the report (link not available for now).
+This procedure stores the Tree in an adjacency list and makes use of a recursive greedy algorithm to solve the challenge. It outputs the optimal cost of the Tree and it calculates at least one optimal labeling possibility. More information about this can be found in the report provided in the repo.
 
 ## 🚀 Running
 
